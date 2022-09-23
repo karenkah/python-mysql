@@ -24,12 +24,8 @@ $docker build -t suaimagempython .
 ```
 ### Executar o container da imagempython
 ```
-$docker run --network tua-rede --name meupython suaimagempython
-```
-### Entrar no container meupython
-```
-$docker exec -it meupython /bin/sh
-```
+$docker run -it --network tua-rede --name meupython suaimagempython
+
 ### Executar o script dadosmysql.py no diretório onde está salvo
 ```
 $ python ./dadosmysql.py
